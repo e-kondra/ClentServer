@@ -1,0 +1,25 @@
+{
+    "orders": [
+        {
+            "item": "filter",
+            "quantity": "12",
+            "price": "1250,20",
+            "buyer": "Gorshkov V.I.",
+            "date": "12.03.2021"
+        },
+        {
+            "item": "printer",
+            "quantity": "9",
+            "price": "12530.50",
+            "buyer": "Kozlov V.V.",
+            "date": "17.01.2022"
+        },
+        {
+            "item": "scaner",
+            "quantity": "20",
+            "price": "3580.50",
+            "buyer": "Сергеев С.Х.",
+            "date": "10.12.2021"
+        }
+    ]
+}
