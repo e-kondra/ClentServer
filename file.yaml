@@ -5,5 +5,5 @@ first_key:
 - fourth
 second_key: 12
 third_key:
-  111€: vienas šimtas vienolika eurų
-  34€: trisdešimt keturi eurai
+  '111': vienas šimtas vienolika €
+  '34': trisdešimt keturi €

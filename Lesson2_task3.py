@@ -25,18 +25,20 @@ dict_for_yaml = {
     'second_key': 12,
     'third_key':
         {
-            '111€': 'vienas šimtas vienolika eurų',
-            '34€': 'trisdešimt keturi eurai'
+            '111': 'vienas šimtas vienolika €',
+            '34': 'trisdešimt keturi €'
         }
 }
 
 with open('file.yaml','w', encoding='utf-8') as f:
     yaml.dump(dict_for_yaml, f, default_flow_style=False, allow_unicode=True)
 
-with open("file.yaml",'r', encoding='utf-8') as f:
-    content = yaml.load(f, Loader=yaml.BaseLoader)
+with open('file.yaml','r', encoding='utf-8') as f1:
+    content = yaml.load(f1, Loader=yaml.BaseLoader)
     print(type(content))
     print(content)
+
+print(content == dict_for_yaml)
 
 
 
