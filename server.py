@@ -6,9 +6,11 @@ from socket import socket, AF_INET, SOCK_STREAM
 from common.variables import ACTION, ACCOUNT_NAME, RESPONSE, MAX_CONNECTIONS,PRESENCE, TIME, USER, ERROR, DEFAULT_PORT
 from common.utils import get_message, send_message
 from logs.configs import server_log_config
+from decors import log
 
 LOG = logging.getLogger('server')
 
+@log
 def check_message(msg):
     if ACTION in msg and msg[ACTION] == PRESENCE and TIME in msg and USER in msg and msg[USER][ACCOUNT_NAME] == 'Guest':
         LOG.info('Проверка сообщения в check_message успешна, ответ: 200')

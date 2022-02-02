@@ -7,9 +7,11 @@ import logs.configs.client_log_config
 
 from common.variables import *
 from common.utils import send_message, get_message
+from decors import log
 
 LOG = logging.getLogger('client')
 
+@log
 def get_answer(msg):
     '''get answer from server'''
     if RESPONSE in msg:
@@ -19,7 +21,7 @@ def get_answer(msg):
         return f'400 : {msg[ERROR]}'
     raise ValueError
 
-
+@log
 def make_presence(account_name='Guest'):
     '''generate clients presence request'''
     request = {
