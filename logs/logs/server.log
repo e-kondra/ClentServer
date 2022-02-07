@@ -1,0 +1,234 @@
+2022-02-07 10:13:19,773 server.py  DEBUG      server               Была вызвана функция args_parser c параметрами (), {}.Вызов из модуля __main__.Вызов из функции main().Вызов из функции main  
+2022-02-07 10:13:19,791 server.py  INFO       server               Соединение установлено c ('127.0.0.1', 63669)  
+2022-02-07 10:13:20,592 server.py  INFO       server               перед get_message  
+2022-02-07 10:13:20,593 server.py  INFO       server               Получено сообщение {'action': 'presence', 'time': 1644221599.7909713, 'user': {'account_name': 'Guest'}}  
+2022-02-07 10:13:20,594 server.py  INFO       server               Проверка сообщения в clients_message_handling успешна, ответ: 200  
+2022-02-07 10:13:20,597 server.py  DEBUG      server               Была вызвана функция clients_message_handling c параметрами ({'action': 'presence', 'time': 1644221599.7909713, 'user': {'account_name': 'Guest'}}, [], <socket.socket fd=292, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 63669)>), {}.Вызов из модуля __main__.Вызов из функции main().Вызов из функции main  
+2022-02-07 10:13:22,282 server.py  INFO       server               Соединение установлено c ('127.0.0.1', 63670)  
+2022-02-07 10:13:23,083 server.py  INFO       server               перед get_message  
+2022-02-07 10:13:23,083 server.py  INFO       server               Получено сообщение {'action': 'presence', 'time': 1644221602.2828467, 'user': {'account_name': 'Guest'}}  
+2022-02-07 10:13:23,084 server.py  INFO       server               Проверка сообщения в clients_message_handling успешна, ответ: 200  
+2022-02-07 10:13:23,085 server.py  DEBUG      server               Была вызвана функция clients_message_handling c параметрами ({'action': 'presence', 'time': 1644221602.2828467, 'user': {'account_name': 'Guest'}}, [], <socket.socket fd=380, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 63670)>), {}.Вызов из модуля __main__.Вызов из функции main().Вызов из функции main  
+2022-02-07 10:13:28,689 server.py  INFO       server               перед get_message  
+2022-02-07 10:13:28,689 server.py  INFO       server               Получено сообщение {'action': 'message', 'time': 1644221608.2316265, 'account_name': 'Guest', 'mess_text': 'ghbdtn'}  
+2022-02-07 10:13:28,690 server.py  INFO       server               Получено сообщение в clients_message_handling, проверка успешна  
+2022-02-07 10:13:28,692 server.py  DEBUG      server               Была вызвана функция clients_message_handling c параметрами ({'action': 'message', 'time': 1644221608.2316265, 'account_name': 'Guest', 'mess_text': 'ghbdtn'}, [('Guest', 'ghbdtn')], <socket.socket fd=292, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 63669)>), {}.Вызов из модуля __main__.Вызов из функции main().Вызов из функции main  
+2022-02-07 10:13:28,693 server.py  INFO       server               Клиент ('127.0.0.1', 63669) отключился от сервера.  
+2022-02-07 10:13:28,695 server.py  INFO       server               Клиент ('127.0.0.1', 63670) отключился от сервера.  
+2022-02-07 10:17:45,530 server.py  DEBUG      server               Была вызвана функция args_parser c параметрами (), {}.Вызов из модуля __main__.Вызов из функции main().Вызов из функции main  
+2022-02-07 10:17:45,548 server.py  INFO       server               Соединение установлено c ('127.0.0.1', 63699)  
+2022-02-07 10:17:46,348 server.py  INFO       server               перед get_message  
+2022-02-07 10:17:46,349 server.py  INFO       server               Получено сообщение {'action': 'presence', 'time': 1644221865.5481393, 'user': {'account_name': 'Guest'}}  
+2022-02-07 10:17:46,350 server.py  INFO       server               Проверка сообщения в clients_message_handling успешна, ответ: 200  
+2022-02-07 10:17:46,353 server.py  DEBUG      server               Была вызвана функция clients_message_handling c параметрами ({'action': 'presence', 'time': 1644221865.5481393, 'user': {'account_name': 'Guest'}}, [], <socket.socket fd=280, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 63699)>), {}.Вызов из модуля __main__.Вызов из функции main().Вызов из функции main  
+2022-02-07 10:17:47,995 server.py  INFO       server               Соединение установлено c ('127.0.0.1', 63700)  
+2022-02-07 10:17:48,796 server.py  INFO       server               перед get_message  
+2022-02-07 10:17:48,796 server.py  INFO       server               Получено сообщение {'action': 'presence', 'time': 1644221867.995715, 'user': {'account_name': 'Guest'}}  
+2022-02-07 10:17:48,796 server.py  INFO       server               Проверка сообщения в clients_message_handling успешна, ответ: 200  
+2022-02-07 10:17:48,798 server.py  DEBUG      server               Была вызвана функция clients_message_handling c параметрами ({'action': 'presence', 'time': 1644221867.995715, 'user': {'account_name': 'Guest'}}, [], <socket.socket fd=276, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 63700)>), {}.Вызов из модуля __main__.Вызов из функции main().Вызов из функции main  
+2022-02-07 10:17:52,800 server.py  INFO       server               перед get_message  
+2022-02-07 10:17:52,801 server.py  INFO       server               Получено сообщение {'action': 'message', 'time': 1644221872.6637716, 'account_name': 'Guest', 'mess_text': 'ghbdtb'}  
+2022-02-07 10:17:52,801 server.py  INFO       server               Получено сообщение в clients_message_handling, проверка успешна  
+2022-02-07 10:17:52,802 server.py  INFO       server               message_list = [('Guest', 'ghbdtb')]  
+2022-02-07 10:17:52,804 server.py  DEBUG      server               Была вызвана функция clients_message_handling c параметрами ({'action': 'message', 'time': 1644221872.6637716, 'account_name': 'Guest', 'mess_text': 'ghbdtb'}, [('Guest', 'ghbdtb')], <socket.socket fd=280, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 63699)>), {}.Вызов из модуля __main__.Вызов из функции main().Вызов из функции main  
+2022-02-07 10:17:52,805 server.py  INFO       server               Клиент ('127.0.0.1', 63699) отключился от сервера.  
+2022-02-07 10:17:52,806 server.py  INFO       server               Клиент ('127.0.0.1', 63700) отключился от сервера.  
+2022-02-07 10:19:49,852 server.py  DEBUG      server               Была вызвана функция args_parser c параметрами (), {}.Вызов из модуля __main__.Вызов из функции main().Вызов из функции main  
+2022-02-07 10:19:49,878 server.py  INFO       server               Соединение установлено c ('127.0.0.1', 63713)  
+2022-02-07 10:19:50,679 server.py  INFO       server               перед get_message  
+2022-02-07 10:19:50,679 server.py  INFO       server               Получено сообщение {'action': 'presence', 'time': 1644221989.8784716, 'user': {'account_name': 'Guest'}}  
+2022-02-07 10:19:50,679 server.py  INFO       server               Проверка сообщения в clients_message_handling успешна, ответ: 200  
+2022-02-07 10:19:50,681 server.py  DEBUG      server               Была вызвана функция clients_message_handling c параметрами ({'action': 'presence', 'time': 1644221989.8784716, 'user': {'account_name': 'Guest'}}, [], <socket.socket fd=420, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 63713)>), {}.Вызов из модуля __main__.Вызов из функции main().Вызов из функции main  
+2022-02-07 10:19:50,683 server.py  INFO       server               после clients_message_handling  
+2022-02-07 10:19:59,489 server.py  INFO       server               перед get_message  
+2022-02-07 10:19:59,490 server.py  INFO       server               Получено сообщение {'action': 'message', 'time': 1644221998.7664523, 'account_name': 'Guest', 'mess_text': 'ghghbg'}  
+2022-02-07 10:19:59,491 server.py  INFO       server               Получено сообщение в clients_message_handling, проверка успешна  
+2022-02-07 10:19:59,492 server.py  INFO       server               message_list = [('Guest', 'ghghbg')]  
+2022-02-07 10:19:59,494 server.py  DEBUG      server               Была вызвана функция clients_message_handling c параметрами ({'action': 'message', 'time': 1644221998.7664523, 'account_name': 'Guest', 'mess_text': 'ghghbg'}, [('Guest', 'ghghbg')], <socket.socket fd=420, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 63713)>), {}.Вызов из модуля __main__.Вызов из функции main().Вызов из функции main  
+2022-02-07 10:19:59,495 server.py  INFO       server               после clients_message_handling  
+2022-02-07 10:19:59,496 server.py  INFO       server               Клиент ('127.0.0.1', 63713) отключился от сервера.  
+2022-02-07 10:22:33,120 server.py  DEBUG      server               Была вызвана функция args_parser c параметрами (), {}.Вызов из модуля __main__.Вызов из функции main().Вызов из функции main  
+2022-02-07 10:22:33,144 server.py  INFO       server               Соединение установлено c ('127.0.0.1', 63735)  
+2022-02-07 10:22:33,946 server.py  INFO       server               перед get_message  
+2022-02-07 10:22:33,946 server.py  INFO       server               Получено сообщение {'action': 'presence', 'time': 1644222153.1448166, 'user': {'account_name': 'Guest'}}  
+2022-02-07 10:22:33,946 server.py  INFO       server               Проверка сообщения в clients_message_handling успешна, ответ: 200  
+2022-02-07 10:22:33,948 server.py  DEBUG      server               Была вызвана функция clients_message_handling c параметрами ({'action': 'presence', 'time': 1644222153.1448166, 'user': {'account_name': 'Guest'}}, [], <socket.socket fd=364, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 63735)>), {}.Вызов из модуля __main__.Вызов из функции main().Вызов из функции main  
+2022-02-07 10:22:40,354 server.py  INFO       server               перед get_message  
+2022-02-07 10:22:40,354 server.py  INFO       server               Получено сообщение {'action': 'message', 'time': 1644222160.034633, 'account_name': 'Guest', 'mess_text': 'ghbdtn'}  
+2022-02-07 10:22:40,355 server.py  INFO       server               Получено сообщение в clients_message_handling, проверка успешна  
+2022-02-07 10:22:40,356 server.py  INFO       server               message_list = [('Guest', 'ghbdtn')]  
+2022-02-07 10:22:40,358 server.py  DEBUG      server               Была вызвана функция clients_message_handling c параметрами ({'action': 'message', 'time': 1644222160.034633, 'account_name': 'Guest', 'mess_text': 'ghbdtn'}, [('Guest', 'ghbdtn')], <socket.socket fd=364, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 63735)>), {}.Вызов из модуля __main__.Вызов из функции main().Вызов из функции main  
+2022-02-07 10:22:40,359 server.py  INFO       server               clients_write  
+2022-02-07 10:22:40,360 server.py  INFO       server               message = {'action': 'message', 'sender': 'Guest', 'time': datetime.time(0, 0), 'mess_text': 'ghbdtn'}  
+2022-02-07 10:22:40,360 server.py  INFO       server               перед send_message  
+2022-02-07 10:22:40,361 server.py  INFO       server               Клиент ('127.0.0.1', 63735) отключился от сервера.  
+2022-02-07 10:26:32,671 server.py  DEBUG      server               Была вызвана функция args_parser c параметрами (), {}.Вызов из модуля __main__.Вызов из функции main().Вызов из функции main  
+2022-02-07 10:26:32,683 server.py  INFO       server               Соединение установлено c ('127.0.0.1', 63768)  
+2022-02-07 10:26:33,485 server.py  INFO       server               перед get_message  
+2022-02-07 10:26:33,485 server.py  INFO       server               Получено сообщение {'action': 'presence', 'time': 1644222392.6839535, 'user': {'account_name': 'Guest'}}  
+2022-02-07 10:26:33,485 server.py  INFO       server               Проверка сообщения в clients_message_handling успешна, ответ: 200  
+2022-02-07 10:26:33,486 server.py  DEBUG      server               Была вызвана функция clients_message_handling c параметрами ({'action': 'presence', 'time': 1644222392.6839535, 'user': {'account_name': 'Guest'}}, [], <socket.socket fd=448, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 63768)>), {}.Вызов из модуля __main__.Вызов из функции main().Вызов из функции main  
+2022-02-07 10:26:35,162 server.py  INFO       server               Соединение установлено c ('127.0.0.1', 63769)  
+2022-02-07 10:26:35,964 server.py  INFO       server               перед get_message  
+2022-02-07 10:26:35,965 server.py  INFO       server               Получено сообщение {'action': 'presence', 'time': 1644222395.1629899, 'user': {'account_name': 'Guest'}}  
+2022-02-07 10:26:35,966 server.py  INFO       server               Проверка сообщения в clients_message_handling успешна, ответ: 200  
+2022-02-07 10:26:35,969 server.py  DEBUG      server               Была вызвана функция clients_message_handling c параметрами ({'action': 'presence', 'time': 1644222395.1629899, 'user': {'account_name': 'Guest'}}, [], <socket.socket fd=356, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 63769)>), {}.Вызов из модуля __main__.Вызов из функции main().Вызов из функции main  
+2022-02-07 10:26:43,978 server.py  INFO       server               перед get_message  
+2022-02-07 10:26:43,979 server.py  INFO       server               Получено сообщение {'action': 'message', 'time': 1644222403.7217662, 'account_name': 'Guest', 'mess_text': 'ghbdtn'}  
+2022-02-07 10:26:43,980 server.py  INFO       server               Получено сообщение в clients_message_handling, проверка успешна  
+2022-02-07 10:26:43,981 server.py  INFO       server               message_list = [('Guest', 'ghbdtn')]  
+2022-02-07 10:26:43,983 server.py  DEBUG      server               Была вызвана функция clients_message_handling c параметрами ({'action': 'message', 'time': 1644222403.7217662, 'account_name': 'Guest', 'mess_text': 'ghbdtn'}, [('Guest', 'ghbdtn')], <socket.socket fd=448, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 63768)>), {}.Вызов из модуля __main__.Вызов из функции main().Вызов из функции main  
+2022-02-07 10:26:43,984 server.py  INFO       server               clients_write  
+2022-02-07 10:26:43,985 server.py  INFO       server               message = {'action': 'message', 'sender': 'Guest', 'time': datetime.time(0, 0), 'mess_text': 'ghbdtn'}  
+2022-02-07 10:26:43,985 server.py  INFO       server               перед send_message  
+2022-02-07 10:26:43,986 server.py  INFO       server               Клиент ('127.0.0.1', 63768) отключился от сервера.Object of type time is not JSON serializable  
+2022-02-07 10:26:43,987 server.py  INFO       server               перед send_message  
+2022-02-07 10:26:43,987 server.py  INFO       server               Клиент ('127.0.0.1', 63769) отключился от сервера.Object of type time is not JSON serializable  
+2022-02-07 10:29:16,358 server.py  DEBUG      server               Была вызвана функция args_parser c параметрами (), {}.Вызов из модуля __main__.Вызов из функции main().Вызов из функции main  
+2022-02-07 10:29:16,371 server.py  INFO       server               Соединение установлено c ('127.0.0.1', 63788)  
+2022-02-07 10:29:17,172 server.py  INFO       server               перед get_message  
+2022-02-07 10:29:17,173 server.py  INFO       server               Получено сообщение {'action': 'presence', 'time': 1644222556.371555, 'user': {'account_name': 'Guest'}}  
+2022-02-07 10:29:17,173 server.py  INFO       server               Проверка сообщения в clients_message_handling успешна, ответ: 200  
+2022-02-07 10:29:17,177 server.py  DEBUG      server               Была вызвана функция clients_message_handling c параметрами ({'action': 'presence', 'time': 1644222556.371555, 'user': {'account_name': 'Guest'}}, [], <socket.socket fd=372, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 63788)>), {}.Вызов из модуля __main__.Вызов из функции main().Вызов из функции main  
+2022-02-07 10:29:18,857 server.py  INFO       server               Соединение установлено c ('127.0.0.1', 63789)  
+2022-02-07 10:29:19,658 server.py  INFO       server               перед get_message  
+2022-02-07 10:29:19,659 server.py  INFO       server               Получено сообщение {'action': 'presence', 'time': 1644222558.8567443, 'user': {'account_name': 'Guest'}}  
+2022-02-07 10:29:19,659 server.py  INFO       server               Проверка сообщения в clients_message_handling успешна, ответ: 200  
+2022-02-07 10:29:19,662 server.py  DEBUG      server               Была вызвана функция clients_message_handling c параметрами ({'action': 'presence', 'time': 1644222558.8567443, 'user': {'account_name': 'Guest'}}, [], <socket.socket fd=364, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 63789)>), {}.Вызов из модуля __main__.Вызов из функции main().Вызов из функции main  
+2022-02-07 10:29:52,776 server.py  DEBUG      server               Была вызвана функция args_parser c параметрами (), {}.Вызов из модуля __main__.Вызов из функции main().Вызов из функции main  
+2022-02-07 10:29:52,791 server.py  INFO       server               Соединение установлено c ('127.0.0.1', 63796)  
+2022-02-07 10:29:53,591 server.py  INFO       server               перед get_message  
+2022-02-07 10:29:53,592 server.py  INFO       server               Получено сообщение {'action': 'presence', 'time': 1644222592.7910905, 'user': {'account_name': 'Guest'}}  
+2022-02-07 10:29:53,593 server.py  INFO       server               Проверка сообщения в clients_message_handling успешна, ответ: 200  
+2022-02-07 10:29:53,595 server.py  DEBUG      server               Была вызвана функция clients_message_handling c параметрами ({'action': 'presence', 'time': 1644222592.7910905, 'user': {'account_name': 'Guest'}}, [], <socket.socket fd=304, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 63796)>), {}.Вызов из модуля __main__.Вызов из функции main().Вызов из функции main  
+2022-02-07 10:29:55,271 server.py  INFO       server               Соединение установлено c ('127.0.0.1', 63797)  
+2022-02-07 10:29:56,072 server.py  INFO       server               перед get_message  
+2022-02-07 10:29:56,072 server.py  INFO       server               Получено сообщение {'action': 'presence', 'time': 1644222595.2714283, 'user': {'account_name': 'Guest'}}  
+2022-02-07 10:29:56,073 server.py  INFO       server               Проверка сообщения в clients_message_handling успешна, ответ: 200  
+2022-02-07 10:29:56,073 server.py  DEBUG      server               Была вызвана функция clients_message_handling c параметрами ({'action': 'presence', 'time': 1644222595.2714283, 'user': {'account_name': 'Guest'}}, [], <socket.socket fd=300, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 63797)>), {}.Вызов из модуля __main__.Вызов из функции main().Вызов из функции main  
+2022-02-07 10:30:00,879 server.py  INFO       server               перед get_message  
+2022-02-07 10:30:00,880 server.py  INFO       server               Получено сообщение {'action': 'message', 'time': 1644222600.2088022, 'account_name': 'Guest', 'mess_text': 'ghbdtn'}  
+2022-02-07 10:30:00,880 server.py  INFO       server               Получено сообщение в clients_message_handling, проверка успешна  
+2022-02-07 10:30:00,881 server.py  INFO       server               message_list = [('Guest', 'ghbdtn')]  
+2022-02-07 10:30:00,883 server.py  DEBUG      server               Была вызвана функция clients_message_handling c параметрами ({'action': 'message', 'time': 1644222600.2088022, 'account_name': 'Guest', 'mess_text': 'ghbdtn'}, [('Guest', 'ghbdtn')], <socket.socket fd=304, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 63796)>), {}.Вызов из модуля __main__.Вызов из функции main().Вызов из функции main  
+2022-02-07 10:30:00,884 server.py  INFO       server               clients_write  
+2022-02-07 10:30:00,885 server.py  INFO       server               message = {'action': 'message', 'sender': 'Guest', 'time': 1644222600.8855467, 'mess_text': 'ghbdtn'}  
+2022-02-07 10:30:00,886 server.py  INFO       server               перед send_message  
+2022-02-07 10:30:00,889 server.py  INFO       server               перед send_message  
+2022-02-07 10:30:26,506 server.py  INFO       server               перед get_message  
+2022-02-07 10:30:26,506 server.py  INFO       server               Получено сообщение {'action': 'message', 'time': 1644222625.721584, 'account_name': 'Guest', 'mess_text': 'привет'}  
+2022-02-07 10:30:26,507 server.py  INFO       server               Получено сообщение в clients_message_handling, проверка успешна  
+2022-02-07 10:30:26,507 server.py  INFO       server               message_list = [('Guest', 'привет')]  
+2022-02-07 10:30:26,507 server.py  DEBUG      server               Была вызвана функция clients_message_handling c параметрами ({'action': 'message', 'time': 1644222625.721584, 'account_name': 'Guest', 'mess_text': 'привет'}, [('Guest', 'привет')], <socket.socket fd=304, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 63796)>), {}.Вызов из модуля __main__.Вызов из функции main().Вызов из функции main  
+2022-02-07 10:30:26,508 server.py  INFO       server               clients_write  
+2022-02-07 10:30:26,508 server.py  INFO       server               message = {'action': 'message', 'sender': 'Guest', 'time': 1644222626.5085826, 'mess_text': 'привет'}  
+2022-02-07 10:30:26,508 server.py  INFO       server               перед send_message  
+2022-02-07 10:30:26,508 server.py  INFO       server               перед send_message  
+2022-02-07 10:31:12,138 server.py  INFO       server               перед get_message  
+2022-02-07 10:31:12,139 server.py  INFO       server               Получено сообщение {'action': 'message', 'time': 1644222671.5660439, 'account_name': 'Guest', 'mess_text': 'вот зарабюотало чтоли'}  
+2022-02-07 10:31:12,140 server.py  INFO       server               Получено сообщение в clients_message_handling, проверка успешна  
+2022-02-07 10:31:12,141 server.py  INFO       server               message_list = [('Guest', 'вот зарабюотало чтоли')]  
+2022-02-07 10:31:12,143 server.py  DEBUG      server               Была вызвана функция clients_message_handling c параметрами ({'action': 'message', 'time': 1644222671.5660439, 'account_name': 'Guest', 'mess_text': 'вот зарабюотало чтоли'}, [('Guest', 'вот зарабюотало чтоли')], <socket.socket fd=304, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 63796)>), {}.Вызов из модуля __main__.Вызов из функции main().Вызов из функции main  
+2022-02-07 10:31:12,145 server.py  INFO       server               clients_write  
+2022-02-07 10:31:12,145 server.py  INFO       server               message = {'action': 'message', 'sender': 'Guest', 'time': 1644222672.1452754, 'mess_text': 'вот зарабюотало чтоли'}  
+2022-02-07 10:31:12,146 server.py  INFO       server               перед send_message  
+2022-02-07 10:31:12,146 server.py  INFO       server               перед send_message  
+2022-02-07 10:32:18,817 server.py  DEBUG      server               Была вызвана функция args_parser c параметрами (), {}.Вызов из модуля __main__.Вызов из функции main().Вызов из функции main  
+2022-02-07 10:32:18,863 server.py  INFO       server               Соединение установлено c ('127.0.0.1', 63812)  
+2022-02-07 10:32:18,864 server.py  INFO       server               Соединение установлено c ('127.0.0.1', 63813)  
+2022-02-07 10:32:19,665 server.py  INFO       server               перед get_message  
+2022-02-07 10:32:19,666 server.py  INFO       server               Получено сообщение {'action': 'presence', 'time': 1644222738.8636374, 'user': {'account_name': 'Guest'}}  
+2022-02-07 10:32:19,667 server.py  INFO       server               Проверка сообщения в clients_message_handling успешна, ответ: 200  
+2022-02-07 10:32:19,669 server.py  DEBUG      server               Была вызвана функция clients_message_handling c параметрами ({'action': 'presence', 'time': 1644222738.8636374, 'user': {'account_name': 'Guest'}}, [], <socket.socket fd=276, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 63812)>), {}.Вызов из модуля __main__.Вызов из функции main().Вызов из функции main  
+2022-02-07 10:32:19,673 server.py  INFO       server               перед get_message  
+2022-02-07 10:32:19,673 server.py  INFO       server               Получено сообщение {'action': 'presence', 'time': 1644222738.8636374, 'user': {'account_name': 'Guest'}}  
+2022-02-07 10:32:19,673 server.py  INFO       server               Проверка сообщения в clients_message_handling успешна, ответ: 200  
+2022-02-07 10:32:19,675 server.py  DEBUG      server               Была вызвана функция clients_message_handling c параметрами ({'action': 'presence', 'time': 1644222738.8636374, 'user': {'account_name': 'Guest'}}, [], <socket.socket fd=432, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 63813)>), {}.Вызов из модуля __main__.Вызов из функции main().Вызов из функции main  
+2022-02-07 10:32:21,358 server.py  INFO       server               Соединение установлено c ('127.0.0.1', 63815)  
+2022-02-07 10:32:21,364 server.py  INFO       server               Соединение установлено c ('127.0.0.1', 63816)  
+2022-02-07 10:32:21,364 server.py  INFO       server               перед get_message  
+2022-02-07 10:32:21,364 server.py  INFO       server               Получено сообщение {'action': 'presence', 'time': 1644222741.3587646, 'user': {'account_name': 'Guest'}}  
+2022-02-07 10:32:21,364 server.py  INFO       server               Проверка сообщения в clients_message_handling успешна, ответ: 200  
+2022-02-07 10:32:21,367 server.py  DEBUG      server               Была вызвана функция clients_message_handling c параметрами ({'action': 'presence', 'time': 1644222741.3587646, 'user': {'account_name': 'Guest'}}, [], <socket.socket fd=356, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 63815)>), {}.Вызов из модуля __main__.Вызов из функции main().Вызов из функции main  
+2022-02-07 10:32:21,368 server.py  INFO       server               Соединение установлено c ('127.0.0.1', 63817)  
+2022-02-07 10:32:21,370 server.py  INFO       server               перед get_message  
+2022-02-07 10:32:21,370 server.py  INFO       server               Получено сообщение {'action': 'presence', 'time': 1644222741.3647478, 'user': {'account_name': 'Guest'}}  
+2022-02-07 10:32:21,373 server.py  INFO       server               Проверка сообщения в clients_message_handling успешна, ответ: 200  
+2022-02-07 10:32:21,374 server.py  DEBUG      server               Была вызвана функция clients_message_handling c параметрами ({'action': 'presence', 'time': 1644222741.3647478, 'user': {'account_name': 'Guest'}}, [], <socket.socket fd=228, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 63816)>), {}.Вызов из модуля __main__.Вызов из функции main().Вызов из функции main  
+2022-02-07 10:32:21,375 server.py  INFO       server               перед get_message  
+2022-02-07 10:32:21,375 server.py  INFO       server               Получено сообщение {'action': 'presence', 'time': 1644222741.3647478, 'user': {'account_name': 'Guest'}}  
+2022-02-07 10:32:21,376 server.py  INFO       server               Проверка сообщения в clients_message_handling успешна, ответ: 200  
+2022-02-07 10:32:21,380 server.py  DEBUG      server               Была вызвана функция clients_message_handling c параметрами ({'action': 'presence', 'time': 1644222741.3647478, 'user': {'account_name': 'Guest'}}, [], <socket.socket fd=448, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 63817)>), {}.Вызов из модуля __main__.Вызов из функции main().Вызов из функции main  
+2022-02-07 10:32:35,792 server.py  INFO       server               перед get_message  
+2022-02-07 10:32:35,792 server.py  INFO       server               Получено сообщение {'action': 'message', 'time': 1644222755.4813786, 'account_name': 'Guest', 'mess_text': 'всем привет'}  
+2022-02-07 10:32:35,794 server.py  INFO       server               Получено сообщение в clients_message_handling, проверка успешна  
+2022-02-07 10:32:35,797 server.py  INFO       server               message_list = [('Guest', 'всем привет')]  
+2022-02-07 10:32:35,802 server.py  DEBUG      server               Была вызвана функция clients_message_handling c параметрами ({'action': 'message', 'time': 1644222755.4813786, 'account_name': 'Guest', 'mess_text': 'всем привет'}, [('Guest', 'всем привет')], <socket.socket fd=432, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 63813)>), {}.Вызов из модуля __main__.Вызов из функции main().Вызов из функции main  
+2022-02-07 10:32:35,804 server.py  INFO       server               clients_write  
+2022-02-07 10:32:35,809 server.py  INFO       server               message = {'action': 'message', 'sender': 'Guest', 'time': 1644222755.8090785, 'mess_text': 'всем привет'}  
+2022-02-07 10:32:35,810 server.py  INFO       server               перед send_message  
+2022-02-07 10:32:35,811 server.py  INFO       server               перед send_message  
+2022-02-07 10:32:35,812 server.py  INFO       server               перед send_message  
+2022-02-07 10:32:35,813 server.py  INFO       server               перед send_message  
+2022-02-07 10:32:35,818 server.py  INFO       server               перед send_message  
+2022-02-07 10:33:06,238 server.py  INFO       server               перед get_message  
+2022-02-07 10:33:06,239 server.py  INFO       server               Получено сообщение {'action': 'message', 'time': 1644222786.0128763, 'account_name': 'Guest', 'mess_text': 'да-да, привет'}  
+2022-02-07 10:33:06,242 server.py  INFO       server               Получено сообщение в clients_message_handling, проверка успешна  
+2022-02-07 10:33:06,244 server.py  INFO       server               message_list = [('Guest', 'да-да, привет')]  
+2022-02-07 10:33:06,248 server.py  DEBUG      server               Была вызвана функция clients_message_handling c параметрами ({'action': 'message', 'time': 1644222786.0128763, 'account_name': 'Guest', 'mess_text': 'да-да, привет'}, [('Guest', 'да-да, привет')], <socket.socket fd=276, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 63812)>), {}.Вызов из модуля __main__.Вызов из функции main().Вызов из функции main  
+2022-02-07 10:33:06,249 server.py  INFO       server               clients_write  
+2022-02-07 10:33:06,253 server.py  INFO       server               message = {'action': 'message', 'sender': 'Guest', 'time': 1644222786.2532253, 'mess_text': 'да-да, привет'}  
+2022-02-07 10:33:06,255 server.py  INFO       server               перед send_message  
+2022-02-07 10:33:06,256 server.py  INFO       server               перед send_message  
+2022-02-07 10:33:06,257 server.py  INFO       server               перед send_message  
+2022-02-07 10:33:06,263 server.py  INFO       server               перед send_message  
+2022-02-07 10:33:06,266 server.py  INFO       server               перед send_message  
+2022-02-07 10:35:53,967 server.py  DEBUG      server               Была вызвана функция args_parser c параметрами (), {}.Вызов из модуля __main__.Вызов из функции main().Вызов из функции main  
+2022-02-07 10:35:53,997 server.py  INFO       server               Соединение установлено c ('127.0.0.1', 63842)  
+2022-02-07 10:35:54,006 server.py  INFO       server               Соединение установлено c ('127.0.0.1', 63843)  
+2022-02-07 10:35:54,006 server.py  INFO       server               Получено сообщение {'action': 'presence', 'time': 1644222953.9976718, 'user': {'account_name': 'Guest'}}  
+2022-02-07 10:35:54,006 server.py  INFO       server               Проверка сообщения в clients_message_handling успешна, ответ: 200  
+2022-02-07 10:35:54,008 server.py  DEBUG      server               Была вызвана функция clients_message_handling c параметрами ({'action': 'presence', 'time': 1644222953.9976718, 'user': {'account_name': 'Guest'}}, [], <socket.socket fd=284, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 63842)>), {}.Вызов из модуля __main__.Вызов из функции main().Вызов из функции main  
+2022-02-07 10:35:54,809 server.py  INFO       server               Получено сообщение {'action': 'presence', 'time': 1644222954.0066478, 'user': {'account_name': 'Guest'}}  
+2022-02-07 10:35:54,809 server.py  INFO       server               Проверка сообщения в clients_message_handling успешна, ответ: 200  
+2022-02-07 10:35:54,810 server.py  DEBUG      server               Была вызвана функция clients_message_handling c параметрами ({'action': 'presence', 'time': 1644222954.0066478, 'user': {'account_name': 'Guest'}}, [], <socket.socket fd=412, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 63843)>), {}.Вызов из модуля __main__.Вызов из функции main().Вызов из функции main  
+2022-02-07 10:35:56,484 server.py  INFO       server               Соединение установлено c ('127.0.0.1', 63844)  
+2022-02-07 10:35:56,495 server.py  INFO       server               Соединение установлено c ('127.0.0.1', 63845)  
+2022-02-07 10:35:56,495 server.py  INFO       server               Получено сообщение {'action': 'presence', 'time': 1644222956.4845693, 'user': {'account_name': 'Guest'}}  
+2022-02-07 10:35:56,495 server.py  INFO       server               Проверка сообщения в clients_message_handling успешна, ответ: 200  
+2022-02-07 10:35:56,497 server.py  DEBUG      server               Была вызвана функция clients_message_handling c параметрами ({'action': 'presence', 'time': 1644222956.4845693, 'user': {'account_name': 'Guest'}}, [], <socket.socket fd=428, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 63844)>), {}.Вызов из модуля __main__.Вызов из функции main().Вызов из функции main  
+2022-02-07 10:35:56,498 server.py  INFO       server               Соединение установлено c ('127.0.0.1', 63846)  
+2022-02-07 10:35:56,499 server.py  INFO       server               Получено сообщение {'action': 'presence', 'time': 1644222956.4955397, 'user': {'account_name': 'Guest'}}  
+2022-02-07 10:35:56,500 server.py  INFO       server               Проверка сообщения в clients_message_handling успешна, ответ: 200  
+2022-02-07 10:35:56,501 server.py  DEBUG      server               Была вызвана функция clients_message_handling c параметрами ({'action': 'presence', 'time': 1644222956.4955397, 'user': {'account_name': 'Guest'}}, [], <socket.socket fd=392, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 63845)>), {}.Вызов из модуля __main__.Вызов из функции main().Вызов из функции main  
+2022-02-07 10:35:56,503 server.py  INFO       server               Получено сообщение {'action': 'presence', 'time': 1644222956.4955397, 'user': {'account_name': 'Guest'}}  
+2022-02-07 10:35:56,503 server.py  INFO       server               Проверка сообщения в clients_message_handling успешна, ответ: 200  
+2022-02-07 10:35:56,506 server.py  DEBUG      server               Была вызвана функция clients_message_handling c параметрами ({'action': 'presence', 'time': 1644222956.4955397, 'user': {'account_name': 'Guest'}}, [], <socket.socket fd=452, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 63846)>), {}.Вызов из модуля __main__.Вызов из функции main().Вызов из функции main  
+2022-02-07 10:36:22,124 server.py  INFO       server               Получено сообщение {'action': 'message', 'time': 1644222981.9122841, 'account_name': 'Guest', 'mess_text': 'Labas rytas, visiems!'}  
+2022-02-07 10:36:22,125 server.py  INFO       server               Получено сообщение в clients_message_handling, проверка успешна  
+2022-02-07 10:36:22,131 server.py  DEBUG      server               Была вызвана функция clients_message_handling c параметрами ({'action': 'message', 'time': 1644222981.9122841, 'account_name': 'Guest', 'mess_text': 'Labas rytas, visiems!'}, [('Guest', 'Labas rytas, visiems!')], <socket.socket fd=412, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 63843)>), {}.Вызов из модуля __main__.Вызов из функции main().Вызов из функции main  
+2022-02-07 10:36:22,132 server.py  INFO       server               перед send_message  
+2022-02-07 10:36:22,133 server.py  INFO       server               перед send_message  
+2022-02-07 10:36:22,134 server.py  INFO       server               перед send_message  
+2022-02-07 10:36:22,135 server.py  INFO       server               перед send_message  
+2022-02-07 10:36:22,140 server.py  INFO       server               перед send_message  
+2022-02-07 10:37:05,366 server.py  INFO       server               Получено сообщение {'action': 'message', 'time': 1644223024.8120952, 'account_name': 'Guest', 'mess_text': 'laba diena'}  
+2022-02-07 10:37:05,367 server.py  INFO       server               Получено сообщение в clients_message_handling, проверка успешна  
+2022-02-07 10:37:05,370 server.py  DEBUG      server               Была вызвана функция clients_message_handling c параметрами ({'action': 'message', 'time': 1644223024.8120952, 'account_name': 'Guest', 'mess_text': 'laba diena'}, [('Guest', 'laba diena')], <socket.socket fd=284, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 63842)>), {}.Вызов из модуля __main__.Вызов из функции main().Вызов из функции main  
+2022-02-07 10:37:05,371 server.py  INFO       server               перед send_message  
+2022-02-07 10:37:05,372 server.py  INFO       server               перед send_message  
+2022-02-07 10:37:05,373 server.py  INFO       server               перед send_message  
+2022-02-07 10:37:05,373 server.py  INFO       server               перед send_message  
+2022-02-07 10:37:05,374 server.py  INFO       server               перед send_message  
+2022-02-07 10:37:22,186 server.py  INFO       server               Получено сообщение {'action': 'message', 'time': 1644223042.0280492, 'account_name': 'Guest', 'mess_text': 'kaip sekasi?'}  
+2022-02-07 10:37:22,187 server.py  INFO       server               Получено сообщение в clients_message_handling, проверка успешна  
+2022-02-07 10:37:22,190 server.py  DEBUG      server               Была вызвана функция clients_message_handling c параметрами ({'action': 'message', 'time': 1644223042.0280492, 'account_name': 'Guest', 'mess_text': 'kaip sekasi?'}, [('Guest', 'kaip sekasi?')], <socket.socket fd=284, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 63842)>), {}.Вызов из модуля __main__.Вызов из функции main().Вызов из функции main  
+2022-02-07 10:37:22,191 server.py  INFO       server               перед send_message  
+2022-02-07 10:37:22,192 server.py  INFO       server               перед send_message  
+2022-02-07 10:37:22,193 server.py  INFO       server               перед send_message  
+2022-02-07 10:37:22,193 server.py  INFO       server               перед send_message  
+2022-02-07 10:37:22,194 server.py  INFO       server               перед send_message  
+2022-02-07 10:37:31,803 server.py  INFO       server               Клиент ('127.0.0.1', 63846) отключился от сервера.  
+2022-02-07 10:37:32,604 server.py  INFO       server               Клиент ('127.0.0.1', 63842) отключился от сервера.  
+2022-02-07 10:37:33,405 server.py  INFO       server               Клиент ('127.0.0.1', 63843) отключился от сервера.  
+2022-02-07 10:37:34,206 server.py  INFO       server               Клиент ('127.0.0.1', 63844) отключился от сервера.  
