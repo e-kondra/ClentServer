@@ -13,7 +13,6 @@ ENCODING = 'utf-8'
 ACTION = 'action'
 TIME = 'time'
 USER = 'user'
-SENDER = 'sender'
 #
 ACCOUNT_NAME = 'account_name'
 PRESENCE = 'presence'
@@ -24,3 +23,9 @@ MESSAGE_TEXT = 'mess_text'
 
 LISTEN_MODE = 'listen'
 SEND_MODE = 'send'
+
+SENDER = 'from'
+DESTINATION = 'to'
+EXIT = 'exit'
+
+

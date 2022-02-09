@@ -7,7 +7,7 @@ import time
 from select import select
 
 from common.variables import ACTION, ACCOUNT_NAME, RESPONSE, MAX_CONNECTIONS, PRESENCE, TIME, USER, ERROR, DEFAULT_PORT, \
-    MESSAGE_TEXT, MESSAGE, SENDER
+    MESSAGE_TEXT, MESSAGE, SENDER, DESTINATION, EXIT
 from common.utils import get_message, send_message
 from logs.configs import server_log_config
 from decors import log
@@ -46,17 +46,46 @@ def args_parser():
 
 
 @log
-def clients_message_handling(msg, message_list, client):
-    if ACTION in msg and msg[ACTION] == PRESENCE and TIME in msg and USER in msg and msg[USER][ACCOUNT_NAME] == 'Guest':
-        LOG.info('Проверка сообщения в clients_message_handling успешна, ответ: 200')
-        send_message(client, {RESPONSE: 200})
-    elif ACTION in msg and msg[ACTION] == MESSAGE and TIME in msg and MESSAGE_TEXT in msg:
+def clients_message_handling(msg, message_list, client, clients, names):
+    # 1.Сообщение о присутствии
+    if ACTION in msg and msg[ACTION] == PRESENCE and TIME in msg and USER in msg:
+        if msg[USER][ACCOUNT_NAME] not in names.keys():
+            names[msg[USER][ACCOUNT_NAME]] = client
+            LOG.info('Проверка сообщения в clients_message_handling успешна, ответ: 200')
+            send_message(client, {RESPONSE: 200})
+        else:
+            LOG.warning('Проверка сообщения в check_message не успешна, ответ: Имя пользователя уже занято ')
+            send_message(client, {RESPONSE: 400, ERROR: 'Имя пользователя уже занято'})
+            clients.remove(client)
+            client.close()
+
+    elif ACTION in msg and msg[ACTION] == MESSAGE and TIME in msg and DESTINATION in msg \
+            and SENDER in msg and MESSAGE_TEXT in msg:
         LOG.info('Получено сообщение в clients_message_handling, проверка успешна')
-        message_list.append((msg[ACCOUNT_NAME], msg[MESSAGE_TEXT]))
+        message_list.append(msg)
+        return
+    elif ACTION in msg and msg[ACTION] == EXIT and ACCOUNT_NAME in msg:
+        clients.remove(names[msg[ACCOUNT_NAME]])
+        names[msg[ACCOUNT_NAME]].close()
+        del names[msg[ACCOUNT_NAME]]
         return
     else:
-        LOG.warning('Проверка сообщения в check_message не успешна, ответ: Bad request ')
-        send_message(client,  {RESPONSE: 400, ERROR: 'Bad request'})
+        LOG.warning('Проверка сообщения в check_message не успешна, ответ: Запрос не корректен ')
+        send_message(client,  {RESPONSE: 400, ERROR: 'Запрос не корректен'})
+        return
+
+
+def message_handling(msg, names, clients_wr):
+    # msg[DESTINATION] - имя
+    # names[message[DESTINATION]] - получатель
+
+    if msg[DESTINATION] in names and names[msg[DESTINATION]] in clients_wr:
+        send_message(names[msg[DESTINATION]], msg)
+        LOG.info(f'Пользователю {msg[DESTINATION]} отправлено сообщение от {msg[SENDER]}')
+    elif msg[DESTINATION] in names and names[msg[DESTINATION]] not in clients_wr:
+        raise ConnectionError
+    else:
+        LOG.error(f'Пользователь {msg[DESTINATION]} не зарегистрирован, отправка сообщения невозможна')
 
 
 def main():
@@ -69,6 +98,9 @@ def main():
 
     clients = []
     message_list = []
+
+    # Словарь, содержащий имена пользователей и соответствующие им сокеты.
+    names = dict()
 
     server_socket.listen(MAX_CONNECTIONS)
     # endless cycle to waiting clients
@@ -97,30 +129,22 @@ def main():
                 try:
                     clients_message = get_message(client)
                     LOG.info(f'Получено сообщение {clients_message}')
-                    clients_message_handling(clients_message, message_list, client)
+                    clients_message_handling(clients_message, message_list, client, clients, names)
 
-                except:
-                    LOG.info(f'Клиент {client.getpeername()} '
-                                f'отключился от сервера.')
+                except Exception:
+                    LOG.info(f'Клиент {client.getpeername()} отключился от сервера.')
                     clients.remove(client)
-        # если сообщения для отправки есть и клиенты есть, то
+        # если сообщения для отправки есть , обрабатываем их
         if message_list:
-            if clients_write:
-                # формируем сообщение
-                message = {
-                    ACTION: MESSAGE,
-                    SENDER: message_list[0][0],
-                    TIME: time.time(),
-                    MESSAGE_TEXT: message_list[0][1]
-                }
-                del message_list[0]
-                #  отправляем сообщение на всех клиентов из списка
-                for client in clients_write:
-                    try:
-                        send_message(client, message)
-                    except Exception as err:
-                        LOG.info(f'Клиент {client.getpeername()} отключился от сервера.{err}')
-                        clients.remove(client)
+            for i in message_list:
+                try:
+                    message_handling(i, names, clients_write)
+                except Exception:
+                    LOG.info(f'Связь с клиентом с именем {i[DESTINATION]} была потеряна')
+                    clients.remove(names[i[DESTINATION]])
+                    del names[i[DESTINATION]]
+            message_list.clear()
+
 
 
 if __name__ == '__main__':

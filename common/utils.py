@@ -1,5 +1,6 @@
 import json
 
+from errors import IncorrectDataRecivedError, NonDictInputError
 from .variables import MAX_PACKAGE_LENGTH, ENCODING
 
 
@@ -9,21 +10,23 @@ def get_message(client):
     and return object dict or raise error
     client.py 192.168.1.33 8888
     '''
-    byte_client_data = client.recv(MAX_PACKAGE_LENGTH)
-    if type(byte_client_data) is bytes:
-        json_client_data = byte_client_data.decode(ENCODING)
-        client_data = json.loads(json_client_data)
-        if type(client_data) is dict:
-            return client_data
+    encoded_response = client.recv(MAX_PACKAGE_LENGTH)
+    if isinstance(encoded_response, bytes):
+        json_response = encoded_response.decode(ENCODING)
+        response = json.loads(json_response)
+        if isinstance(response, dict):
+            return response
         else:
-            raise ValueError
+            raise IncorrectDataRecivedError
     else:
-        raise ValueError
+        raise IncorrectDataRecivedError
 
-def send_message(socket, msg):
+def send_message(sock, msg):
     '''
     from str to bytes and sending message in byte-format
     '''
-    json_msg = json.dumps(msg)
-    byte_msg = json_msg.encode(ENCODING)
-    socket.send(byte_msg)
+    if not isinstance(msg, dict):
+        raise NonDictInputError
+    js_message = json.dumps(msg)
+    encoded_message = js_message.encode(ENCODING)
+    sock.send(encoded_message)
